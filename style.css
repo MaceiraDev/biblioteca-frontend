@@ -1,0 +1,214 @@
+.input_login {
+    width: 100%;
+    background: #fff;
+    outline: none;
+    border-radius: 5px;
+    color: #000000;
+    border: solid 2px #ff7f00;
+    padding: 10px;
+    margin-top: 5px;
+    font-weight: 700;
+}
+
+h1 {
+    color: #000;
+}
+
+.btn_login {
+    background-color: #ff7f00;
+    color: #000;
+    padding: 5px;
+    border: solid 2px #ff7f00;
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 100%;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.btn_login:hover {
+    color: #000;
+    border: solid 2px #000;
+}
+
+.body_login {
+    background-image: url("./imagens/backbiblioteca.jpg");
+    background-size: cover;
+    height: auto;
+}
+
+.form_login {
+    background: #7070705e;
+    padding: 30px;
+    margin-top: 5rem;
+    border: solid 2px #ff7f00;
+    box-shadow: 0px 0px 10px 5px rgb(4 2 2 / 84%);
+    border-radius: 10px;
+}
+
+.title_login {
+    color: #ffffff;
+    text-align: center;
+}
+
+.title_login_dois {
+    color: #ffffff;
+    text-align: center;
+
+}
+
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 260px;
+    background: #11101d;
+    padding: 15px;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 25px;
+    padding: 0 15px;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-top: 40px;
+    overflow-y: scroll;
+}
+
+.menu-content::-webkit-scrollbar {
+    display: none;
+}
+
+.menu-items {
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    transition: all 0.4s ease;
+}
+
+.submenu-active .menu-items {
+    transform: translateX(-56%);
+}
+
+.menu-title {
+    color: #fff;
+    font-size: 14px;
+    padding: 15px 20px;
+}
+
+.item a,
+.submenu-item {
+    padding: 16px;
+    display: inline-block;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.item i {
+    font-size: 12px;
+}
+
+.item a:hover,
+.submenu-item:hover,
+.submenu .menu-title:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.submenu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.submenu {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: calc(-100% - 26px);
+    height: calc(100% + 100vh);
+    background: #11101d;
+    display: none;
+}
+
+.show-submenu~.submenu {
+    display: block;
+}
+
+.submenu .menu-title {
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.submenu .menu-title i {
+    margin-right: 10px;
+}
+
+.navbar,
+.main {
+    left: 260px;
+    width: calc(100% - 260px);
+    transition: all 1.5s ease;
+    z-index: 1000;
+}
+
+.sidebar.close~.navbar,
+.sidebar.close~.main {
+    left: 0;
+    width: 100%;
+
+}
+
+.navbar {
+    position: fixed;
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 25px;
+    background: #4070f4;
+    cursor: pointer;
+}
+
+.navbar #sidebar-close {
+    cursor: pointer;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    z-index: 100;
+    background: #e7f2fd;
+}
+.titulo_class {
+    display: inline-block;
+    position: relative;
+    top: 35px;
+    left: 440px;
+}
+
+.sidebar {
+    background: linear-gradient(#0064af, #ff7f00);
+
+}

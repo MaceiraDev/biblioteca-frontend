@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+.input_login{
+    width: 100%;
+}
+h1{
+    color: #000;
+}
+.btn_login{
+    background-color: orange;
+    color: #000;
+    padding: 5px;
+    border: solid 1px #000;
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+.sidebar{
+    background: linear-gradient(#0064af, #ff7f00);
+  }
